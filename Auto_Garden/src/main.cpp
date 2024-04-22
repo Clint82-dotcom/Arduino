@@ -18,7 +18,7 @@ void loop()
 {
   int s1 = sensor1.analogValue();
   int S1 = sensor1.moisturePercent();
-  
+  sensor1.sensorCheck();
   Serial.print("Analog Value: ");
   Serial.println(s1);
   Serial.print("Moisture Percent: ");
